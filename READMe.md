@@ -2,13 +2,13 @@
 
 ### Concept:
 
-FinSeek System is a online Ledger System that allows the user(s) of the System the ability to create an online financial profile(s) that is in the structure of personal financial statement that is able to track and record the financial information/event(s)/etc... of the individual. This system will also include several API's that will link to several online API's that will serve as (simulated) financial organizations (such as Stock Trading Exchanges, Crypto Exchanges, Currency Exchanges, etc....) that the user(s) can make financial orders, transactions and events in the user(s) profile. The purpose of this system is to track and record important financial events, financial information and other associated financial entities for later utilization in business decisions, for discovering useful business insights and for financial acccounting purposes.
+FinSeek System is a online Ledger System that allows the user(s) of the System the ability to create an online financial profile(s) that is in the structure of personal financial statement that is able to track and record the financial information/event(s)/etc... of the user(s)/individual(s). This system will also include several API's that will link to several online API's that will serve as (simulated) financial organizations (such as Stock Trading Exchanges, Crypto Exchanges, Currency Exchanges, etc....) that the user(s) can make financial orders, transactions and events in the user(s) profile. The purpose of this system is to track and record important financial events, financial information and other associated financial entities for later utilization in business decisions, for discovering useful business insights and for financial acccounting purposes.
 
 #####The main features of the application are:
 
 - Project creation and management
-- Financial organization/individual(s) profile building/development
-- Financial organization/individual(s) domain for websites/etc....
+- Financial organization/individual(s)/user(s) profile building/development
+- Financial organization/individual(s)/user(s) domain for websites/etc....
 - Search Functionality and User Login Authentication
 - UI features
 - CRUD
@@ -35,9 +35,9 @@ FinSeek System is a online Ledger System that allows the user(s) of the System t
 
 #### Project Capstone Deployed Features
 [Project Capstone Backend Deployed](https://github.com/marmez11/SEI_Capstone_Finance_Crypto_Backend)
-[Project Capstone Frontend Deployed]()
+[Project Capstone Frontend Deployed](https://github.com/marmez11/SEI_Capstone_Finance_Crypto_Frontend)
 
-![ShadowEye System]()
+![Project Capstone ERD](https://imgur.com/E9suQXA)
 
 ### Daily Plan:
 
