@@ -34,7 +34,7 @@ FinSeek System is a online Ledger System that allows the user(s) of the System t
 
 
 #### Project Capstone Deployed Features
-[Project Capstone Backend Deployed]()
+[Project Capstone Backend Deployed](https://github.com/marmez11/SEI_Capstone_Finance_Crypto_Backend)
 [Project Capstone Frontend Deployed]()
 
 ![ShadowEye System]()
@@ -56,6 +56,8 @@ FinSeek System is a online Ledger System that allows the user(s) of the System t
 
 | Path | Method  | Description  | Action  |
 | :---:   | :---: | :---: | :---: |
+| "/login_finance" | LOGIN   |  Login to the FinSeek System with user authentication |  login  |
+| "/signup_finance" | SIGNUP   |  Signup to the FinSeek System with user authentication |  sign up  |
 | "/finance" | GET   |  returns all of the financial profiles/users and all of the information within these profiles/users |  Index/Main  |
 | "/finance/:id" | GET   |  returns one of the financial profiles/users and all of the information within one of these profiles/users |  Show  |
 | "/finance_create" | POST  |  Create finacial  |  Create  |
