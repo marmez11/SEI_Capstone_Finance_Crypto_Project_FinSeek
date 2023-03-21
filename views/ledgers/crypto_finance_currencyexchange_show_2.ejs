@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinSeek Tracking/Reporting System Currency Exchange Individual Information Show Page</title>
+</head>
+<style>
+    .currency_exchange_header{
+        font-size: 30px;
+        border-radius: 30px;
+    text-align: center;
+    color:white;
+    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+-webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    }
+        html {
+            text-align: center;
+            background-image: url("https://imgs.search.brave.com/Jhip99Bh6aIQWyy3RfLhXwsrYpV5TpIwdgt_gTa2G90/rs:fit:1200:952:1/g:ce/aHR0cHM6Ly9pLm1v/cmlvaC5jb20vMjAw/NzAyL2IzMTU0ZDMy/LmpwZw");
+            width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+        }
+    
+        p {
+            font-size: 25px;
+            text-size-adjust: 15px;
+            color: #fff;
+        }
+    
+        div {
+            writing-mode: horizontal;
+      border: 5px solid yellow;
+      border-inline-style:dashed;}
+
+    </style>
+</style>
+<div class="crypto_finance_currency_exchange">
+<main class="crypto_finance_currency_exchange_main">
+    <h2 class="currency_exchange_header"><b>Finseek Ledger System Currency Exchange Individual Information</b></h2>
+    <div class="crypto_finance_currency_exchange_index">
+        <p><b>Currency Exchange Organization Name</b>: <u><em><%= currency_exchange.currency_exchange_org_name %></em></u></p>
+        <p><b>Currency Exchange Currency Name From</b>: <u><em><%= currency_exchange.currency_name_from %></em></u></p>
+        <p><b>Currency Exchange Currency From Amount</b>: <u><em><%= currency_exchange.currency_from_amount %></em></u></p>
+        <p><b>Currency Exchange Currency Name To</b>: <u><em><%= currency_exchange.currency_name_to %></em></u></p>
+        <p><b>Currency Exchange Currency To Amount</b>: <u><em><%= currency_exchange.currency_to_amount %></em></u></p>
+    </div>
+
+<form action="/crypto_finance/currency_exchange_edit/<%=id %>" method="put" align="center" name="cryptoexchange_edit_form">
+    <label>
+        <button class="Edit">Edit Currency Exchange Instance Data</button>
+    </label>
+</form>
+<form action="/crypto_finance/currency_exchange_show/<%=id %>?_method=DELETE" method="POST" align="center" name="cryptoexchange_post_form">
+    <label>
+        <button class="Delete">Delete Currency Exchange Instance Data</button>
+    </label>
+</form>
+<form action="/crypto_finance/currency_exchange_show" method="get" align="center" name="go_to_first_currency_exchange_show_form">
+    <label>
+        <button class="return_to_crypto_index" align="center"><a href="/crypto_finance/currency_exchange_show">Return to previous Crypto Exchange Show Page</a></button>
+    </label>
+</form>
+</main>
+</div>
+</html>

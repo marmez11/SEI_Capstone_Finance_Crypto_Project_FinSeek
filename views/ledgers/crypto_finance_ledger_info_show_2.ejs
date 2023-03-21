@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinSeek Tracking/Reporting System Ledger Individual Information Show</title>
+</head>
+<style>
+    .crypto_ledger_info_header {
+        font-size: 30px;
+        border-radius: 30px;
+    text-align: center;
+    color:white;
+    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+-webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    }
+        html {
+            text-align: center;
+            background-image: url("https://imgs.search.brave.com/Jhip99Bh6aIQWyy3RfLhXwsrYpV5TpIwdgt_gTa2G90/rs:fit:1200:952:1/g:ce/aHR0cHM6Ly9pLm1v/cmlvaC5jb20vMjAw/NzAyL2IzMTU0ZDMy/LmpwZw");
+            width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+        }
+
+        p {
+            font-size: 15px;
+            text-size-adjust: 15px;
+            color: #fff;
+        }
+    
+        div {
+            writing-mode: horizontal;
+      border: 5px solid yellow;
+      border-inline-style:dashed;}
+
+      main {
+        writing-mode: horizontal;
+  border: 5px solid yellow;
+  border-inline-style:dashed;}
+
+      h2 {
+        font-size: 30px;
+        border-radius: 30px;
+    text-align: center;
+    color:white;
+    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+-webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    }
+
+    </style>
+</style>
+<div class="crypto_finance_ledger_info">
+<main class="crypto_finance_ledger_info_main">
+    <h1 class="crypto_ledger_info_header"><b>Finseek Crypto/Finance Tracking/Reporting System Ledger Individual Information</b></h2>
+    <div class="crypto_finance_ledger_info_index">
+        <h2>Finseek Ledger System Background Information Finance User </h2>
+            <p><b>Finseek Ledger System Information Finance User Name</b>: <u><em><%= ledger_info.finance_user_name %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance User BirthDay</b>: <u><em><%= ledger_info.finance_user_birthday %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance User Social Security Number (SSN)</b>: <u><em><%= ledger_info.finance_user_SSN %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance User Residence Address</b>: <u><em><%= ledger_info.finance_user_residence_address %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance User Residence Owner Status</b>: <u><em><%= ledger_info.finance_user_residence_selection_own %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance User Residence Rent Status</b>: <u><em><%= ledger_info.finance_user_residence_selection_rent %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance User Residence Other Status</b>: <u><em><%= ledger_info.finance_user_residence_selection_other %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance User Phone Number</b>: <u><em><%= ledger_info.finance_user_phone_number %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance User Year Period At Residence Address</b>: <u><em><%= ledger_info.finance_user_year_period_at_residence_address %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance User Occupation</b>: <u><em><%= ledger_info.finance_occupation %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance User Employer/Company</b>: <u><em><%= ledger_info.finance_employer_name %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance User Employer/Company Year Period At Employer</b>: <u><em><%= ledger_info.finance_user_year_period_at_employer %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance User Phone Number Employer</b>: <u><em><%= ledger_info.finance_user_phone_number_employer %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance User Marriage Status</b>: <u><em><%= ledger_info.finance_user_marriage_status %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance User Single Status</b>: <u><em><%= ledger_info.finance_user_single_status %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance User Separated Status</b>: <u><em><%= ledger_info.finance_user_separated_status %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance User Number of Dependents</b>: <u><em><%= ledger_info.finance_num_of_dependents %></em></u></p>
+        <h2>Finseek Ledger System Background Finance Credit Card Information </h2>
+            <p><b>Finseek Ledger System Information Finance Credit Card Name</b>: <u><em><%= ledger_info.finance_credit_card_name %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance Credit Card Limit</b>: <u><em><%= ledger_info.finance_credit_card_limit %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance Credit Card Owed Value</b>: <u><em><%= ledger_info.finance_credit_card_financial_owedvalue %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance Credit Card Monthly Value</b>: <u><em><%= ledger_info.finance_credit_card_monthly_payment %></em></u></p>
+        <h2>Finseek Ledger System Background Finance Spouse User </h2>
+            <p><b>Finseek Ledger System Information Finance User Spouse Name</b>: <u><em><%= ledger_info.finance_spouse_name %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance User Spouse Birthday</b>: <u><em><%= ledger_info.finance_spouse_birthday %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance User Spouse Social Security Number (SSN)</b>: <u><em><%= ledger_info.finance_spouse_SSN %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance User Spouse Residence Address</b>: <u><em><%= ledger_info.finance_spouse_residence_address %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance User Spouse Occupation</b>: <u><em><%= ledger_info.finance_spouse_occupation %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance User Spouse Employer/Company</b>: <u><em><%= ledger_info.finance_spouse_employer %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance User Spouse Year Period At Employer</b>: <u><em><%= ledger_info.finance_spouse_year_period_at_employer %></em></u></p>
+        <h2>Finseek Ledger System Background Finance Information </h2>
+            <p><b>Finseek Ledger System Information Finance Asset 1 Name</b>: <u><em><%= ledger_info.finance_asset_names_1 %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance Asset 1 Financial Value</b>: <u><em><%= ledger_info.finance_asset_financial_values_1 %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance Asset 1 Financial Liabilities Name</b>: <u><em><%= ledger_info.finance_liabilities_names_1 %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance Asset 1 Financial Liabilities Owed Values</b>: <u><em><%= ledger_info.finance_liabilities_financial_owedvalues_1 %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance Asset 2 Name</b>: <u><em><%= ledger_info.finance_asset_names_2 %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance Asset 2 Financial Value</b>: <u><em><%= ledger_info.finance_asset_financial_values_2 %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance Asset 2 Financial Liabilities Name</b>: <u><em><%= ledger_info.finance_liabilities_names_2 %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance Asset 2 Financial Owed Values</b>: <u><em><%= ledger_info.finance_liabilities_financial_owedvalues_2 %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance Asset 3 Name</b>: <u><em><%= ledger_info.finance_asset_names_3 %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance Asset 3 Financial Value</b>: <u><em><%= ledger_info.finance_asset_financial_values_3 %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance Asset 3 Financial Liabilities Name</b>: <u><em><%= ledger_info.finance_liabilities_names_3 %></em></u></p>
+            <p><b>Finseek Ledger System Information Finance Asset 3 Financial Owed Values</b>: <u><em><%= ledger_info.finance_liabilities_financial_owedvalues_3 %></em></u></p>
+        </div>
+<form action="/crypto_finance/financial_ledger_edit/<%=id %>" method="put" align="center" name="ledger_info_edit_form">
+    <label>
+        <button class="Edit">Edit Finance User Ledger Info Data</button>
+    </label>
+</form>
+<form action="/crypto_finance/financial_ledger_show/<%=id %>?_method=DELETE" method="POST" align="center" name="ledger_info_post_form">
+    <label>
+        <button class="Delete">Delete Finseek System Ledger Instance Data</button>
+    </label>
+</form>
+<form action="/crypto_finance/financial_ledger_show" method="get" align="center" name="go_to_first_ledger_info_show_form">
+    <label>
+        <button class="return_to_ledger_info_index" align="center"><a href="/crypto_finance/financial_ledger_show">Return to previous Crypto Finance User Ledger Info Show Page</a></button>
+    </label>
+</form></div>
+</main>
+</html>

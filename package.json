@@ -1,0 +1,38 @@
+{
+  "name": "unit_24_maxb__capstone__mongo_express_react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "bcryptjs": "^2.4.3",
+    "chart.js": "^4.2.1",
+    "connect-mongo": "^4.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "method-override": "^3.0.0",
+    "mongoose": "^7.0.1",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7",
+    "pbkdf2-password": "^1.2.1",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "pug": "^3.0.2",
+    "react": "^18.2.0",
+    "tailwindcss": "^3.2.7"
+  },
+  "tailwind:css": "postcss public/styles/tailwind.css -o public/styles/style.css",
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}

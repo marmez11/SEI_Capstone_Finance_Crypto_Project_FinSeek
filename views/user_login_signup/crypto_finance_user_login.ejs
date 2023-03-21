@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Crypto Finance User Login</title>
+    <link type="text/css" rel="stylesheet" href="/public/css/signup_login_css.css">
+    <body id="crypto_finance_login_body">
+            <h1><em><b>
+                User Login to FinSeek Crypto/Finance Ledger System
+            </b></em></h1>
+            <form action="/user/login" method="post" class="crypto_finance_login_form">
+                <fieldset>
+                <label><b><u>
+                    Enter Username: <input type="text" name="username" class="username_input_login" required>
+                </u></b></label></br>
+                <br/>
+                <label><b><u>
+                    Enter Password: <input type="password" name="password" class="password_input_login" required>
+                </u></b></label>
+                <br/>
+                <br/>
+                <label><input type="submit" class="login_btn" value="Log In"></label>
+                <br/>
+                <br/>
+            <button class="create_new_user"><a href="/user/signup">
+                Create New FinSeek Crypto/Finance Ledger System User(s)</a></button>
+            </fieldset>
+                
+            </form>
+    </body>
+</html>

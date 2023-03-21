@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinSeek Tracking/Reporting System Crypto Exchange Individual Information Show Page</title>
+</head>
+<style>
+    .crypto_exchange_currency_header {
+        font-size: 30px;
+        border-radius: 30px;
+    text-align: center;
+    color:white;
+    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+-webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    }
+        html {
+            text-align: center;
+            background-image: url("https://imgs.search.brave.com/Jhip99Bh6aIQWyy3RfLhXwsrYpV5TpIwdgt_gTa2G90/rs:fit:1200:952:1/g:ce/aHR0cHM6Ly9pLm1v/cmlvaC5jb20vMjAw/NzAyL2IzMTU0ZDMy/LmpwZw");
+            width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+        }
+    
+        p {
+            font-size: 25px;
+            text-size-adjust: 15px;
+            color: #fff;
+        }
+    
+        div {
+            writing-mode: horizontal;
+      border: 5px solid yellow;
+      border-inline-style:dashed;}
+
+    </style>
+</style>
+<div class="crypto_finance_cryptoexchange">
+<main class="crypto_finance_cryptoexchange_main">
+    <h2 class="crypto_exchange_currency_header"><b>Finseek Ledger System Cryptocurrency Exchange Coin/Token Information</b></h2>
+    <div class="crypto_finance_cryptoexchange_index">
+        <p><b>Cryptocurrency Exchange URL Link</b>: <u><em><%= crypto_ex.crypto_currency_exchange_org_url_link %></em></u></p>
+        <p><b>Cryptocurrency Name</b>: <u><em><%= crypto_ex.crypto_currency_name %></em></u></p>
+        <p><b>Cryptocurrency Current Price</b>: <u><em><%= crypto_ex.crypto_currency_price %></em></u></p>
+        <p><b>Cryptocurrency Circulating Supply</b>: <u><em><%= crypto_ex.crypto_currency_circulating_supply %></em></u></p>
+        <p><b>Cryptocurrency Transaction Date</b>: <u><em><%= crypto_ex.crypto_currency_transactiondate %></em></u></p>
+        <p><b>Cryptocurrency Order Status</b>: <u><em><%= crypto_ex.crypto_currency_order_status %></em></u></p>
+        <p><b>Cryptocurrency Blockchain Receiving Transaction Hash ID</b>: <u><em><%= crypto_ex.blockchain_receiving_transaction_hash_id_num %></em></u></p>
+        <p><b>Cryptocurrency Blockchain Sending Transaction Hash ID</b>: <u><em><%= crypto_ex.blockchain_sending_transaction_hash_id_num %></em></u></p>
+        <p><b>Cryptocurrency Quantity</b>: <u><em><%= crypto_ex.crypto_currency_quantity %></em></u></p>    
+    </div>
+<a href="/crypto_finance/crypto_exchange_edit/<%=ID %>" align="right">
+    <button class="Edit">Edit Crypto Exchange Instance Data</button>
+</a>
+<form action="/crypto_finance/crypto_exchange_show/<%=ID %>?_method=DELETE" method="POST" 
+    align="center" name="cryptoexchange_post_form">
+    <label>
+        <button class="Delete">Delete Crypto Exchange Instance Data</button>
+    </label>
+</form>
+<form action="/crypto_finance/crypto_exchange_show" method="get" align="center" name="go_to_first_crypto_exchange_show_form">
+    <label>
+        <button class="return_to_crypto_index" align="center"><a href="/crypto_finance/crypto_exchange_show">Return to previous Crypto Exchange Show Page</a></button>
+    </label>
+</form></div>
+</main>
+</div>
+</html>

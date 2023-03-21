@@ -1,0 +1,74 @@
+#crypto_finance_signup_body {
+    text-align: center;
+    background-image: url('https://i.imgur.com/3eRq8UF.png');
+    background-size: 150px;
+    background-repeat: repeat;
+}
+
+#crypto_finance_signup_body h1 { color: hwb(0 100% 0% / 0.956); text-shadow: 0 0 30px rgba(0,0,0,4.3); 
+    letter-spacing:1px; text-align:center; 
+    background-color: rgba(240, 240, 5, 0.75);
+    border-radius: 40%;
+    border: hidden;
+}
+
+.new_user_create_form{
+    color:black;
+    background-color: rgb(255, 3, 3);
+    box-shadow: 0 0 30px rgba(0,0,0,4.3);
+    text-shadow: 0 0 30px rgba(0,0,0,4.3);
+    border: none;
+    letter-spacing:1px;
+    text-align:center;
+}
+
+.crypto_finance_login_form{
+    background-color: rgb(255, 3, 3);
+    text-shadow: 0 0 30px rgba(0,0,0,4.3);
+    border: none;
+    letter-spacing:1px;
+    text-align:center;
+}
+
+#crypto_finance_login_body{
+    text-align: center;
+    background-image: url('https://i.imgur.com/3eRq8UF.png');
+    background-size: 150px;
+    background-repeat: repeat;
+}
+
+#crypto_finance_login_body h1{
+color: hwb(0 100% 0% / 0.956); text-shadow: 0 0 30px rgba(0,0,0,4.3); 
+    letter-spacing:1px; text-align:center; 
+    background-color: rgba(240, 240, 5, 0.75);
+    border-radius: 40%;
+    border: hidden;
+}
+
+#crypto_finance_login_title_header{
+    text-align: center;
+}
+
+.username_input_login{
+    background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+.password_input_login{
+    background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+.signup_btn{
+    background-color: rgba(240, 240, 5, 0.75);
+    border-radius: 35%;
+}
+
+.login_btn {
+    background-color: rgba(240, 240, 5, 0.75);
+    border-radius: 35%;
+}

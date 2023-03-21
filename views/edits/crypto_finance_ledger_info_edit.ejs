@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Crypto Exchange</title>
+ </head>
+ <style>
+
+  legend {
+    font-size: 30px;
+        border-radius: 30px;
+    text-align: center;
+    color:white;
+    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+-webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  }
+
+    label {
+        font-size: 30px;
+        border-radius: 30px;
+    text-align: center;
+    color:white;
+    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+-webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    }
+    
+    html {
+            text-align: center;
+            background-image: url("https://imgs.search.brave.com/Jhip99Bh6aIQWyy3RfLhXwsrYpV5TpIwdgt_gTa2G90/rs:fit:1200:952:1/g:ce/aHR0cHM6Ly9pLm1v/cmlvaC5jb20vMjAw/NzAyL2IzMTU0ZDMy/LmpwZw");
+            width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+        }
+
+  fieldset{
+    writing-mode: horizontal;
+      border: 5px solid yellow;
+      border-inline-style:dashed;
+  }
+</style>
+ <body>
+    <main>
+        <div clas="fin_ledger_edit">
+          <form action="/crypto_finance/financial_ledger_show/<%=id %>?_method=PUT" method="post">
+            <fieldset>
+              <legend>Edit In New Information for the Currency Exchange</legend>
+              <br />
+                <label>
+                Financial User Ledger Info ID:<input
+                  type="number"
+                  name="finance_user_id"
+                  placeholder="Enter Financial User Ledger Info ID..."
+                />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Name:<input
+                  type="text"
+                  name="finance_user_name"
+                  placeholder="Enter Financial User Ledger Info Name..."
+                />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Birthday:<input
+                  type="text"
+                  name="finance_user_birthday"
+                  placeholder="Enter Financial User Ledger Info Birthday..."
+                />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info SSN:<input type="text" name="finance_user_SSN"
+                 placeholder="Enter Financial User Ledger Info SSN..." />
+              </label>
+              <br /> 
+             <label>
+                Financial User Ledger Info Residence Address:<input type="text" name="finance_user_residence_address" 
+                placeholder="Enter Financial User Ledger Info Residence Address..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Phone Number:<input type="text" 
+                name="finance_user_phone_number" placeholder="Enter Financial User Ledger Info Phone Number..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Period At Residence Address:<input type="text" 
+                name="finance_user_year_period_at_residence_address" placeholder="Enter Financial User Ledger Info Period At Residence Address..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Finance Occupation:<input type="text" 
+                name="finance_occupation" placeholder="Enter Financial User Ledger Info Period At Residence Address..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Finance Employer Name:<input type="text" 
+                name="finance_employer_name" placeholder="Enter Financial User Ledger Info Finance Employer Name..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Finance Year Period At Employer:<input type="text" 
+                name="finance_user_year_period_at_employer" placeholder="Enter Financial User Ledger Info Finance Year Period At Employer..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Num Of Dependents:<input type="number" 
+                name="finance_num_of_dependents" placeholder="Enter Financial User Ledger Info Num Of Dependents..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Credit Card Name:<input type="text" 
+                name="finance_credit_card_name" placeholder="Enter Financial User Ledger Info Credit Card Name..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Credit Card Limit:<input type="number" 
+                name="finance_credit_card_limit" placeholder="Enter Financial User Ledger Info Credit Card Limit..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Credit Card Owed Value:<input type="number" 
+                name="finance_credit_card_financial_owedvalue" placeholder="Enter Financial User Ledger Info Credit Card Owed Value..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Credit Card Monthly Payment:<input type="number" 
+                name="finance_credit_card_monthly_payment" placeholder="Enter Financial User Ledger Info Credit Card Owed Value..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Spouse Name:<input type="text" 
+                name="finance_spouse_name" placeholder="Enter Financial User Ledger Info Spouse Name..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Spouse Birthday:<input type="text" 
+                name="finance_spouse_birthday" placeholder="Enter Financial User Ledger Info Spouse Birthday..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Spouse SSN:<input type="text" 
+                name="finance_spouse_SSN" placeholder="Enter Financial User Ledger Info Spouse SSN..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Spouse Residence Address:<input type="text" 
+                name="finance_spouse_residence_address" placeholder="Enter Financial User Ledger Info Spouse Residence Address..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Spouse Occupation:<input type="text" 
+                name="finance_spouse_occupation" placeholder="Enter Financial User Ledger Info Spouse Occupation..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Spouse Employer:<input type="text" 
+                name="finance_spouse_employer" placeholder="Enter Financial User Ledger Info Spouse Employer..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Spouse Year Period At Employer:<input type="text" 
+                name="finance_spouse_year_period_at_employer" placeholder="Enter Financial User Ledger Info Spouse Year Period At Employer..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Financial Asset Names 1:<input type="text" 
+                name="finance_asset_names_1" placeholder="Enter Financial User Ledger Info Financial Asset Names 1..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Finance Asset Financial Values 1:<input type="number" 
+                name="finance_asset_financial_values_1" placeholder="Enter Financial User Ledger Info Finance Asset Financial Values 1..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Financial Owed Liabilities Names 1:<input type="text" 
+                name="finance_liabilities_names_1" placeholder="Enter Financial User Ledger Info Financial Owed Liabilities Names 1..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Financial Owed Values 1:<input type="number" 
+                name="finance_liabilities_financial_owedvalues_1" placeholder="Enter Financial User Ledger Info Financial Owed Values 1..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Financial Asset Names 2:<input type="text" 
+                name="finance_asset_names_2" placeholder="Enter Financial User Ledger Info Financial Asset Names 2..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Finance Asset Financial Values 2:<input type="number" 
+                name="finance_asset_financial_values_2" placeholder="Enter Financial User Ledger Info Finance Asset Financial Values 2..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Financial Owed Liabilities Names 2:<input type="text" 
+                name="finance_liabilities_names_2" placeholder="Enter Financial User Ledger Info Financial Owed Liabilities Names 2..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Financial Owed Values 2:<input type="number" 
+                name="finance_liabilities_financial_owedvalues_2" placeholder="Enter Financial User Ledger Info Financial Owed Values 2..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Financial Asset Names 3:<input type="text" 
+                name="finance_asset_names_3" placeholder="Enter Financial User Ledger Info Financial Asset Names 3..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Finance Asset Financial Values 3:<input type="number" 
+                name="finance_asset_financial_values_3" placeholder="Enter Financial User Ledger Info Finance Asset Financial Values 3..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Financial Owed Liabilities Names 3:<input type="text" 
+                name="finance_liabilities_names_3" placeholder="Enter Financial User Ledger Info Financial Owed Liabilities Names 3..." />
+              </label>
+              <br />
+              <label>
+                Financial User Ledger Info Financial Owed Values 3:<input type="number" 
+                name="finance_liabilities_financial_owedvalues_3" placeholder="Enter Financial User Ledger Info Financial Owed Values 3..." />
+              </label>
+              <br />
+            </fieldset>
+            <input type="submit" value="Submit" />
+            <button class="return_to_currency_exchange_index"><a href="/crypto_finance/financial_ledger_show/<%=id %>">Return to the Financial User Ledger Info Home Screen</a></button>
+          </form>
+        </div>
+      </main>
+    </body>
