@@ -1,29 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
     <title>Crypto Finance User Login</title>
-    <link type="text/css" rel="stylesheet" href="/public/css/signup_login_css.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
+    <style>
+        html {
+            background-image: url('https://i.imgur.com/3eRq8UF.png');
+            background-size: 150px;
+            background-repeat: repeat;
+            overflow-x: scroll;
+        overflow-y: scroll; 
+        }
+        
+        .crypto_finance_login_form{
+            text-shadow: 0 0 30px rgba(0,0,0,4.3);
+            border: none;
+            letter-spacing:1px;
+            text-align:center;
+        }
+        
+        #crypto_finance_login_body{
+            text-align: center;
+        }
+        
+        #crypto_finance_login_body h1{
+        color: hwb(0 100% 0% / 0.956); text-shadow: 0 0 30px rgba(0,0,0,4.3); 
+            letter-spacing:1px; text-align:center; 
+            background-color: rgba(240, 240, 5, 0.75);
+            border-radius: 40%;
+            border: hidden;
+        }
+        
+        .username_input_login{
+            background-color: white;
+          background-position: 10px 10px;
+          background-repeat: no-repeat;
+          padding-left: 40px;
+        }
+        
+        .password_input_login{
+            background-color: white;
+          background-position: 10px 10px;
+          background-repeat: no-repeat;
+          padding-left: 40px;
+        }
+        
+        
+        .login_btn {
+            background-color: rgba(240, 240, 5, 0.75);
+            border-radius: 35%;
+        }  
+    </style>
+    <script>
+        function validateForm() {
+            debugger;
+            var user_name = document.getElementById("username_input_login").value;
+            var pw = document.getElementById("password_input_login").value;
+            var username = "Mware111";
+            var password = "Qwe";
+            if ((user_name === username) && (pw === password)) {
+                alert('You are successfully logged in');
+            } 
+            else if ((user_name !== username) && (pw === password)) {
+                alert('Your Login was unsuccessful, the username was incorrect. Please input the correct username......');
+             }
+             else if ((user_name === username) && (pw !== password)) {
+                alert('Your Login was unsuccessful, the password was incorrect. Please input the correct password......');
+             }
+            else {
+                alert("Login was unsuccessful, your username & password was unsuccessful. Please input the correct username & password");
+                return false;
+            }
+        }
+        </script>
     <body id="crypto_finance_login_body">
             <h1><em><b>
                 User Login to FinSeek Crypto/Finance Ledger System
             </b></em></h1>
-            <form action="/user/login" method="post" class="crypto_finance_login_form">
-                <fieldset>
-                <label><b><u>
-                    Enter Username: <input type="text" name="username" class="username_input_login" required>
-                </u></b></label></br>
-                <br/>
-                <label><b><u>
-                    Enter Password: <input type="password" name="password" class="password_input_login" required>
+            <form action="/user/login" method="post" onSubmit="validateForm()" class="crypto_finance_login_form">
+                <fieldset class="block">
+                <label><b><u><p class="label button" style="color:black; background-color:white; border-radius: 40%;">
+                    Enter Username: </p><input class="button is-warning" type="text" name="username" id="username_input_login" placeholder="Enter Username Here......" required>
                 </u></b></label>
+                <span id="error_usr_name"></span>
                 <br/>
                 <br/>
-                <label><input type="submit" class="login_btn" value="Log In"></label>
+                <label><b><u><p class="label button" style="color:black; background-color:white; border-radius: 40%;">
+                    Enter Password: </p><input class="button is-warning" type="password" name="password" id="password_input_login" placeholder="Enter Password Here......" required>
+                </u></b></label>
+                <span id="error_passwrd"></span>
                 <br/>
                 <br/>
-            <button class="create_new_user"><a href="/user/signup">
+                <label><input class="button is-warning" type="submit" id="login_btn" value="Log In" onclick="errorMessage()"></label>
+                <br/>
+                <br/>
+            <button class="button is-warning" id="create_new_user"><a href="/user/signup">
                 Create New FinSeek Crypto/Finance Ledger System User(s)</a></button>
             </fieldset>
-                
             </form>
     </body>
 </html>

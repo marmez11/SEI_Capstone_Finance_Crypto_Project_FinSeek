@@ -119,6 +119,19 @@ app.get("/ledger", (request, response) => {
 	response.redirect("/crypto_finance/ledger_index")
 })
 
+app.get("/index", (request, response) => {
+	response.redirect("/crypto_finance/ledger_index")
+})
+
+app.get("/crypto", (request, response) => {
+	response.redirect("/crypto_finance/ledger_index")
+})
+
+app.get("/finance", (request, response) => {
+	response.redirect("/crypto_finance/ledger_index")
+})
+
+
 app.get("/crypto_finance", (request, response) => {
 	response.redirect("/crypto_finance/ledger_index")
 })

@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Edit Crypto Exchange</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
  </head>
  <style>
 
@@ -35,20 +37,9 @@ box-shadow: 1px 2px 3px rgba(0,0,0,.5);
         height: 100%;
         margin: 0px;
         padding: 0px;
-        overflow-x: hidden; 
+        overflow-x: scroll;
+        overflow-y: scroll; 
         }
-
-    main{
-            writing-mode: horizontal;
-              border: 5px solid yellow;
-              border-inline-style:dashed;
-          }
-
-    fieldset{
-    writing-mode: horizontal;
-      border: 5px solid yellow;
-      border-inline-style:dashed;
-  }
 </style>
  <body>
     <main>
@@ -57,54 +48,54 @@ box-shadow: 1px 2px 3px rgba(0,0,0,.5);
             <fieldset>
               <legend>Edit In New Information for the Currency Exchange</legend>
               <br />
-              <label>
-                Currency Exchange ID:<input
+              <label class="list-item">
+                Currency Exchange ID:<input class="button is-warning"
                   type="number"
                   name="finance_currency_exchange_info_id"
                   placeholder="Enter Currency Exchange ID..."
                 />
               </label>
               <br />
-              <label>
-                Currency Exchange Organization Name:<input
+              <label class="list-item">
+                Currency Exchange Organization Name:<input class="button is-warning"
                   type="text"
                   name="currency_exchange_org_name"
                   placeholder="Enter Currency Exchange Organization Name..."
                 />
               </label>
               <br />
-              <label>
-                Crypto Exchange Organization Url Link:<input
+              <label class="list-item">
+                Crypto Exchange Organization Url Link:<input class="button is-warning"
                   type="text"
                   name="currency_exchange_org_url_link"
                   placeholder="Enter Currency Exchange Organization Url Link..."
                 />
               </label>
               <br />
-              <label>
-                Currency Exchange Name From:<input type="text" name="currency_name_from"
+              <label class="list-item">
+                Currency Exchange Name From:<input class="button is-warning" type="text" name="currency_name_from"
                  placeholder="Enter Currency Name From..." />
               </label>
               <br />
-              <label>
-                Currency Exchange From Price:<input type="number" name="currency_from_amount" 
+              <label class="list-item">
+                Currency Exchange From Price:<input class="button is-warning" type="number" name="currency_from_amount" 
                 placeholder="Enter Currency From Price..." />
               </label>
               <br />
-              <label>
-                Currency Exchange Name To:<input type="text" 
+              <label class="list-item">
+                Currency Exchange Name To:<input class="button is-warning" type="text" 
                 name="currency_name_to" 
                 placeholder="Enter Currency To Name..." />
               </label>
               <br />
-              <label>
-                Currency Exchange To Price:<input type="number" 
+              <label class="list-item">
+                Currency Exchange To Price:<input class="button is-warning" type="number" 
                 name="currency_to_amount" placeholder="Enter Currency To Price..." />
               </label>
               <br />
             </fieldset>
-            <input type="submit" value="Submit" />
-            <button class="return_to_currency_exchange_index"><a href="/crypto_finance/currency_exchange_show/<%=id %>">Return to the Currency Exchange Home Screen</a></button>
+            <input class="button is-warning is-primary" type="submit" value="Submit" />
+            <button class="button is-warning" id="return_to_currency_exchange_index"><a href="/crypto_finance/currency_exchange_show/<%=id %>">Return to the Currency Exchange Home Screen</a></button>
           </form>
         </div>
       </main>

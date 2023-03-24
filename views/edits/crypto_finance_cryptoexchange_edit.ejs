@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Edit Crypto Exchange</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
  </head>
  <style>
 
@@ -35,20 +37,9 @@ box-shadow: 1px 2px 3px rgba(0,0,0,.5);
         height: 100%;
         margin: 0px;
         padding: 0px;
-        overflow-x: hidden; 
+        overflow-x: scroll;
+        overflow-y: scroll; 
         }
-  
-  main {
-    writing-mode: horizontal;
-      border: 5px solid yellow;
-      border-inline-style:dashed;
-  }
-
-  fieldset{
-    writing-mode: horizontal;
-      border: 5px solid yellow;
-      border-inline-style:dashed;
-  }
 </style>
  <body>
     <main>
@@ -57,76 +48,76 @@ box-shadow: 1px 2px 3px rgba(0,0,0,.5);
             <fieldset>
               <legend>Edit In New Information for the Crypto Exchange</legend>
               <br />
-              <label>
-                Crypto Exchange ID:<input
+              <label class="list-item">
+                Crypto Exchange ID:<input class="button is-warning"
                   type="number"
                   name="crypto_exchange_id"
                   placeholder="Enter Crypto Exchange ID..."
                 />
               </label>
               <br />
-              <label>
-                Crypto Exchange Organization Name:<input
+              <label class="list-item">
+                Crypto Exchange Organization Name:<input class="button is-warning"
                   type="text"
                   name="crypto_currency_exchange_org_name"
                   placeholder="Enter Crypto Exchange Organization Name..."
                 />
               </label>
               <br />
-              <label>
-                Crypto Exchange Organization Url Link:<input
+              <label class="list-item">
+                Crypto Exchange Organization Url Link:<input class="button is-warning"
                   type="text"
                   name="crypto_currency_exchange_org_url_link"
                   placeholder="Enter Crypto Exchange Organization Url Link..."
                 />
               </label>
               <br />
-              <label>
-                Crypto Currency Name:<input type="text" name="crypto_currency_name"
+              <label class="list-item">
+                Crypto Currency Name:<input class="button is-warning" type="text" name="crypto_currency_name"
                  placeholder="Enter Crypto Currency Name..." />
               </label>
               <br />
-              <label>
-                Crypto Currency Price:<input type="number" name="crypto_currency_price" 
+              <label class="list-item">
+                Crypto Currency Price:<input class="button is-warning" type="number" name="crypto_currency_price" 
                 placeholder="Enter Crypto Currency Price..." />
               </label>
               <br />
-              <label>
-                Crypto Currency Transaction Date:<input type="text" 
+              <label class="list-item">
+                Crypto Currency Transaction Date:<input class="button is-warning" type="text" 
                 name="crypto_currency_transactiondate" 
                 placeholder="Enter Crypto Currency Transaction Date..." />
               </label>
               <br />
-              <label>
-                Crypto Currency Order Status:<input type="text" 
+              <label class="list-item">
+                Crypto Currency Order Status:<input class="button is-warning" type="text" 
                 name="crypto_currency_order_status" placeholder="Enter Crypto Currency Order Status..." />
               </label>
               <br />
-              <label>
-                Blockchain Receiving Transaction Hash ID Num:<input type="text" name="blockchain_receiving_transaction_hash_id_num" 
+              <label class="list-item">
+                Blockchain Receiving Transaction Hash ID Num:<input class="button is-warning" type="text" name="blockchain_receiving_transaction_hash_id_num" 
                 placeholder="Enter Blockchain Sending Transaction Hash ID Num..." />
               </label>
               <br />
-              <label>
-                Blockchain Sending Transaction Hash ID Num:<input type="text" name="blockchain_sending_transaction_hash_id_num" 
+              <label class="list-item">
+                Blockchain Sending Transaction Hash ID Num:<input class="button is-warning" type="text" name="blockchain_sending_transaction_hash_id_num" 
                 placeholder="Enter Blockchain Sending Transaction Hash ID Number..." />
               </label>
               <br />
-              <label>
-                Crypto Currency Circulating Supply:<input type="number" 
+              <label class="list-item">
+                Crypto Currency Circulating Supply:<input class="button is-warning" type="number" 
                 name="crypto_currency_circulating_supply"
                  placeholder="Enter Crypto Currency Circulating Supply..." />
               </label>
               <br />
-              <label>
-                Crypto Currency Quantity:<input type="number" 
+              <label class="list-item">
+                Crypto Currency Quantity:<input class="button is-warning" type="number" 
                 name="crypto_currency_quantity"
                  placeholder="Enter Crypto Currency Quantity..." />
               </label>
               <br />
             </fieldset>
-            <input type="submit" value="Submit" />
-            <button class="return_to_crypto_exchange_index"><a href="/crypto_finance/crypto_exchange_show/<%=id %>">Return to the Crypto Exchange Home Screen</a></button>
+            <input class="button is-warning is-primary" type="submit" value="Submit" />
+            <button class="button is-warning" id="return_to_crypto_exchange_index"><a href="/crypto_finance/crypto_exchange_show/<%=id %>">Return to the Crypto Exchange Home Screen</a></button>
           </form>
         </div>
       </main>

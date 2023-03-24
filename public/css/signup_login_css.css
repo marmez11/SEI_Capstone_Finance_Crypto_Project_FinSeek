@@ -14,7 +14,6 @@
 
 .new_user_create_form{
     color:black;
-    background-color: rgb(255, 3, 3);
     box-shadow: 0 0 30px rgba(0,0,0,4.3);
     text-shadow: 0 0 30px rgba(0,0,0,4.3);
     border: none;
@@ -23,7 +22,6 @@
 }
 
 .crypto_finance_login_form{
-    background-color: rgb(255, 3, 3);
     text-shadow: 0 0 30px rgba(0,0,0,4.3);
     border: none;
     letter-spacing:1px;
@@ -63,12 +61,15 @@ color: hwb(0 100% 0% / 0.956); text-shadow: 0 0 30px rgba(0,0,0,4.3);
   padding-left: 40px;
 }
 
-.signup_btn{
-    background-color: rgba(240, 240, 5, 0.75);
-    border-radius: 35%;
-}
 
 .login_btn {
     background-color: rgba(240, 240, 5, 0.75);
     border-radius: 35%;
 }
+
+.signup_btn{
+    background-color: rgba(240, 240, 5, 0.75);
+    border-radius: 35%;
+}
+
+

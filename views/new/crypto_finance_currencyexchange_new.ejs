@@ -16,25 +16,21 @@ integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="ano
         height: 100%;
         margin: 0px;
         padding: 0px;
-        overflow-x: hidden; 
+        overflow-x: scroll;
+        overflow-y: scroll;  
         }
 
         form {
             font-size: 25px;
             text-size-adjust: 15px;
-            color: #fff;
+            color: black;
         }
 
         h1 {
             font-size: 25px;
             text-size-adjust: 15px;
-            color: #fff;
+            color: black;
         }
-    
-        .currency_exchange_create_new {
-            writing-mode: horizontal;
-      border: 5px solid yellow;
-      border-inline-style:dashed;}
 
       button {
         text-align: right;
@@ -43,17 +39,22 @@ integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="ano
 
 </style>
 <body>
-    <div class="currency_exchange_create_new">
+    <div class="block" style="border-radius: 40%; background-color: white" id="currency_exchange_create_new">
         <h1>Creating New Currency Exchange Instance</h1>
     <form action="/crypto_finance/currency_exchange_show" method="post">
-            Currency Exchange ID: <input name="finance_currency_exchange_info_id" 
+            Currency Exchange ID: <input class="button is-warning" name="finance_currency_exchange_info_id" 
             type="number" 
             placeholder="Enter a value for the Currency Exchange ID instance..."/>
         <br />
-        <button><input type="submit" value="Add New Currency Exchange Instance" /></button>
+        <button class="button is-warning is-primary"><input type="submit" value="Add New Currency Exchange Instance" /></button>
         <br />
-        <button class="return_to_currency_index"><a href="/crypto_finance/currency_exchange_show">Return to Currency Exchange Home Screen</a></button>
+        <button class="button is-warning" id="return_to_currency_index"><a href="/crypto_finance/currency_exchange_show">Return to Currency Exchange Home Screen</a></button>
     </form>
     </div>
+    <br />
+    <br />
+    <br />
+    <img src="https://i.imgur.com/3eRq8UF.png" width="500" 
+    height="500" />
 </body>
 </html>

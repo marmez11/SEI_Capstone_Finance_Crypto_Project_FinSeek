@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FinSeek Tracking/Reporting System Ledger Individual Information Show</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
 </head>
 <style>
     .crypto_ledger_info_header {
         font-size: 30px;
         border-radius: 30px;
     text-align: center;
-    color:white;
+    color:goldenrod;
     -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 box-shadow: 1px 2px 3px rgba(0,0,0,.5);
@@ -23,30 +25,21 @@ box-shadow: 1px 2px 3px rgba(0,0,0,.5);
         height: 100%;
         margin: 0px;
         padding: 0px;
-        overflow-x: hidden; 
+        overflow-x: scroll;
+        overflow-y: scroll; 
         }
 
         p {
             font-size: 15px;
             text-size-adjust: 15px;
-            color: #fff;
+            color: black
         }
-    
-        div {
-            writing-mode: horizontal;
-      border: 5px solid yellow;
-      border-inline-style:dashed;}
-
-      main {
-        writing-mode: horizontal;
-  border: 5px solid yellow;
-  border-inline-style:dashed;}
 
       h2 {
         font-size: 30px;
         border-radius: 30px;
     text-align: center;
-    color:white;
+    color:black;
     -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 box-shadow: 1px 2px 3px rgba(0,0,0,.5);
@@ -57,7 +50,9 @@ box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 <div class="crypto_finance_ledger_info">
 <main class="crypto_finance_ledger_info_main">
     <h1 class="crypto_ledger_info_header"><b>Finseek Crypto/Finance Tracking/Reporting System Ledger Individual Information</b></h2>
-    <div class="crypto_finance_ledger_info_index">
+        <br />
+        <br />
+        <div class="block" style="border-radius: 30%; background-color: white" id="crypto_finance_ledger_info_index_1">
         <h2>Finseek Ledger System Background Information Finance User </h2>
             <p><b>Finseek Ledger System Information Finance User Name</b>: <u><em><%= ledger_info.finance_user_name %></em></u></p>
             <p><b>Finseek Ledger System Information Finance User BirthDay</b>: <u><em><%= ledger_info.finance_user_birthday %></em></u></p>
@@ -76,11 +71,15 @@ box-shadow: 1px 2px 3px rgba(0,0,0,.5);
             <p><b>Finseek Ledger System Information Finance User Single Status</b>: <u><em><%= ledger_info.finance_user_single_status %></em></u></p>
             <p><b>Finseek Ledger System Information Finance User Separated Status</b>: <u><em><%= ledger_info.finance_user_separated_status %></em></u></p>
             <p><b>Finseek Ledger System Information Finance User Number of Dependents</b>: <u><em><%= ledger_info.finance_num_of_dependents %></em></u></p>
+    </div>
+    <div class="block" style="border-radius: 30%; background-color: white" id="crypto_finance_ledger_info_index_2">
         <h2>Finseek Ledger System Background Finance Credit Card Information </h2>
             <p><b>Finseek Ledger System Information Finance Credit Card Name</b>: <u><em><%= ledger_info.finance_credit_card_name %></em></u></p>
             <p><b>Finseek Ledger System Information Finance Credit Card Limit</b>: <u><em><%= ledger_info.finance_credit_card_limit %></em></u></p>
             <p><b>Finseek Ledger System Information Finance Credit Card Owed Value</b>: <u><em><%= ledger_info.finance_credit_card_financial_owedvalue %></em></u></p>
             <p><b>Finseek Ledger System Information Finance Credit Card Monthly Value</b>: <u><em><%= ledger_info.finance_credit_card_monthly_payment %></em></u></p>
+    </div>
+    <div class="block" style="border-radius: 30%; background-color: white" id="crypto_finance_ledger_info_index_3">
         <h2>Finseek Ledger System Background Finance Spouse User </h2>
             <p><b>Finseek Ledger System Information Finance User Spouse Name</b>: <u><em><%= ledger_info.finance_spouse_name %></em></u></p>
             <p><b>Finseek Ledger System Information Finance User Spouse Birthday</b>: <u><em><%= ledger_info.finance_spouse_birthday %></em></u></p>
@@ -89,6 +88,8 @@ box-shadow: 1px 2px 3px rgba(0,0,0,.5);
             <p><b>Finseek Ledger System Information Finance User Spouse Occupation</b>: <u><em><%= ledger_info.finance_spouse_occupation %></em></u></p>
             <p><b>Finseek Ledger System Information Finance User Spouse Employer/Company</b>: <u><em><%= ledger_info.finance_spouse_employer %></em></u></p>
             <p><b>Finseek Ledger System Information Finance User Spouse Year Period At Employer</b>: <u><em><%= ledger_info.finance_spouse_year_period_at_employer %></em></u></p>
+    </div>
+    <div class="block" style="border-radius: 30%; background-color: white" id="crypto_finance_ledger_info_index_4">
         <h2>Finseek Ledger System Background Finance Information </h2>
             <p><b>Finseek Ledger System Information Finance Asset 1 Name</b>: <u><em><%= ledger_info.finance_asset_names_1 %></em></u></p>
             <p><b>Finseek Ledger System Information Finance Asset 1 Financial Value</b>: <u><em><%= ledger_info.finance_asset_financial_values_1 %></em></u></p>
@@ -105,17 +106,19 @@ box-shadow: 1px 2px 3px rgba(0,0,0,.5);
         </div>
 <form action="/crypto_finance/financial_ledger_edit/<%=id %>" method="put" align="center" name="ledger_info_edit_form">
     <label>
-        <button class="Edit">Edit Finance User Ledger Info Data</button>
+        <button class="tag button is-warning is-medium" id="Edit">Edit Finance User Ledger Info Data</button>
     </label>
 </form>
+<br />
 <form action="/crypto_finance/financial_ledger_show/<%=id %>?_method=DELETE" method="POST" align="center" name="ledger_info_post_form">
     <label>
-        <button class="Delete">Delete Finseek System Ledger Instance Data</button>
+        <button class="button is-warning" id="Delete">Delete Finseek System Ledger Instance Data</button>
     </label>
 </form>
+<br />
 <form action="/crypto_finance/financial_ledger_show" method="get" align="center" name="go_to_first_ledger_info_show_form">
     <label>
-        <button class="return_to_ledger_info_index" align="center"><a href="/crypto_finance/financial_ledger_show">Return to previous Crypto Finance User Ledger Info Show Page</a></button>
+        <button class="button is-warning" id="return_to_ledger_info_index" align="center"><a href="/crypto_finance/financial_ledger_show">Return to previous Crypto Finance User Ledger Info Show Page</a></button>
     </label>
 </form></div>
 </main>
