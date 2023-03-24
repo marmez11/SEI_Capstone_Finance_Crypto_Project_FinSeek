@@ -45,6 +45,8 @@ const CONFIG = {
     useNewUrlParser: true,
     useUnifiedTopology: true
   }
+const PORT = 4547
+const SECRET = "qpalzm12!!qpalzm12!!"
 
 // Establish Connection
 mongoose.connect(DATABASE_URL, CONFIG)
@@ -73,8 +75,8 @@ app.use((req, res, next) => { // making the models (crypto_finance_user_profile,
 
 app.use(
 	session({
-		secret: process.env.SECRET,
-		store: MongoStore.create({mongoUrl: process.env.DATABASE_URL}),
+		secret: SECRET,
+		store: MongoStore.create({mongoUrl: DATABASE_URL}),
 		saveUninitialized: false,
 		resave:false,
 	})
@@ -139,5 +141,4 @@ app.get("/crypto_finance", (request, response) => {
 //////////////////////////////////////////////
 // Server Listener
 //////////////////////////////////////////////
-const PORT = process.env.PORT
 app.listen(PORT, () => console.log(`Now Listening on port ${PORT}`))
