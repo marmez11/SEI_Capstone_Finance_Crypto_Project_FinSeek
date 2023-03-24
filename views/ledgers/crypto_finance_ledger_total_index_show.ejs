@@ -61,25 +61,23 @@ box-shadow: 1px 2px 3px rgba(0,0,0,.5);
     <h2><p id="FinSeek_Crypto_Finance_total_show_title_p"><b><em><u>FinSeek Crypto/Finance Tracking/Reporting System Totals & Insights Information </u></em></b></p></h2> 
     <br />
     <br />
-    <% if(ledger_info.length === crypto_ex.length) { %>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js">
         </script>
       <%  for(let index=0; index < ledger_info.length; index++) { %>
         <div class="list is-hoverable" id="crypto_finance_ledger_totals_index">
-            <p class="list-item" id="FinSeek_Crypto_Finance_ledger_totals_id"><em><b>Financial User(s) Ledger Info ID: <%=ledger_info[index].finance_user_id %> & Crypto Exchange ID: <%=crypto_ex[index].crypto_exchange_id %> </b></em></p>
+            <p class="list-item" id="FinSeek_Crypto_Finance_ledger_totals_id"><em><b>Financial User(s) Ledger Info ID: <%=ledger_info[index].finance_user_id %> </b></em></p>
             <p class="list-item" id="FinSeek_Crypto_Finance_ledger_totals1"><b><u>(<%= ledger_info[index].finance_asset_names_1 %> - <%= ledger_info[index].finance_liabilities_names_1 %>)</u></b> = <em> $<%= (ledger_info[index].finance_asset_financial_values_1 - ledger_info[index].finance_liabilities_financial_owedvalues_1) %>.00</em></p>
             <p class="list-item" id="FinSeek_Crypto_Finance_ledger_totals2"><b><u>(<%= ledger_info[index].finance_asset_names_2 %> - <%= ledger_info[index].finance_liabilities_names_2 %>)</u></b> = <em> $<%= (ledger_info[index].finance_asset_financial_values_2 - ledger_info[index].finance_liabilities_financial_owedvalues_2) %>.00</em></p>
             <p class="list-item" id="FinSeek_Crypto_Finance_ledger_totals3"><b><u>(<%= ledger_info[index].finance_asset_names_3 %> - <%= ledger_info[index].finance_liabilities_names_3 %>)</u></b> = <em> $<%= (ledger_info[index].finance_asset_financial_values_3 - ledger_info[index].finance_liabilities_financial_owedvalues_3) %>.00</em></p>
-            <p class="list-item" id="FinSeek_Crypto_Finance_crypto_exchange_totals1"><b><u>(<%= crypto_ex[index].crypto_currency_name %> * <%= crypto_ex[index].crypto_currency_quantity %>)</u></b> = <em> $<%=crypto_ex[index].crypto_currency_price * crypto_ex[index].crypto_currency_quantity %>.00</em></p>
-            <h2 class="list-item" id="FinSeek_Crypto_Finance_overall_totals"> <u>Overall Totals:  </u><p>$<%=((ledger_info[index].finance_asset_financial_values_1 - ledger_info[index].finance_liabilities_financial_owedvalues_1) + (ledger_info[index].finance_asset_financial_values_2 - ledger_info[index].finance_liabilities_financial_owedvalues_2) + (ledger_info[index].finance_asset_financial_values_3 - ledger_info[index].finance_liabilities_financial_owedvalues_3) + (crypto_ex[index].crypto_currency_price * crypto_ex[index].crypto_currency_quantity))%>.00</p></h2>
+            <h2 class="list-item" id="FinSeek_Crypto_Finance_overall_totals"> <u>Overall Totals:  </u><p>$<%=((ledger_info[index].finance_asset_financial_values_1 - ledger_info[index].finance_liabilities_financial_owedvalues_1)+(ledger_info[index].finance_asset_financial_values_2 - ledger_info[index].finance_liabilities_financial_owedvalues_2)+(ledger_info[index].finance_asset_financial_values_3 - ledger_info[index].finance_liabilities_financial_owedvalues_3))%>.00</p></h2>
         </div>
     
         <canvas id="<%= 'myChart' + index %>"></canvas>
         <canvas id="<%= 'myChart2' + index %>"></canvas>
 
         <script>
-            var yValues_totals = ['<%- (ledger_info[index].finance_asset_financial_values_1 - ledger_info[index].finance_liabilities_financial_owedvalues_1) %>', '<%- (ledger_info[index].finance_asset_financial_values_2 - ledger_info[index].finance_liabilities_financial_owedvalues_2) %>', '<%- (ledger_info[index].finance_asset_financial_values_3 - ledger_info[index].finance_liabilities_financial_owedvalues_3) %>', '<%- (crypto_ex[index].crypto_currency_price * crypto_ex[index].crypto_currency_quantity) %>'];
-            var xValues_totals = ["FinSeek_Ledger_Totals_1: (Real Estate - Real Estate Taxes)", "FinSeek_Ledger_Totals_2: (Stocks - Stocks Trade Fines)", "FinSeek_Ledger_Totals_3: (Checking/Savings - Checking/Savings Account Fees)", "FinSeek_Crypto_Exchange_Totals: (SDC/USDT * 4 Quantity)"];
+            var yValues_totals = ['<%- (ledger_info[index].finance_asset_financial_values_1 - ledger_info[index].finance_liabilities_financial_owedvalues_1) %>', '<%- (ledger_info[index].finance_asset_financial_values_2 - ledger_info[index].finance_liabilities_financial_owedvalues_2) %>', '<%- (ledger_info[index].finance_asset_financial_values_3 - ledger_info[index].finance_liabilities_financial_owedvalues_3) %>'];
+            var xValues_totals = ["FinSeek_Ledger_Totals_1: (Real Estate - Real Estate Taxes)", "FinSeek_Ledger_Totals_2: (Stocks - Stocks Trade Fines)", "FinSeek_Ledger_Totals_3: (Checking/Savings - Checking/Savings Account Fees)"];
             var barColors = ["red", "green","blue","orange"];
     
             new Chart("<%= 'myChart' + index %>", {
@@ -102,9 +100,9 @@ box-shadow: 1px 2px 3px rgba(0,0,0,.5);
         </script>
 
         <script>
-            var yValues_totals = ['<%- ledger_info[index].finance_asset_financial_values_1 %>', '<%- ledger_info[index].finance_liabilities_financial_owedvalues_1 %>', '<%- ledger_info[index].finance_asset_financial_values_2 %>', '<%-ledger_info[index].finance_liabilities_financial_owedvalues_2 %>', '<%- ledger_info[index].finance_asset_financial_values_3 %>', '<%- ledger_info[index].finance_liabilities_financial_owedvalues_3 %>', '<%- (crypto_ex[index].crypto_currency_price * crypto_ex[index].crypto_currency_quantity) %>'];
-            var xValues_totals = ["Real_Estate", "Real Estate Taxes", "Stocks", "Stocks Trade Fines", "Checking/Savings", "Checking/Savings Account Fees", "Crypto_Exchange_Total (crypto_currency_price * crypto_currency_quantity)"];
-            var barColors = ["red", "blue", "green", "blue", "orange", "yellow", "green"];
+            var yValues_totals = ['<%- ledger_info[index].finance_asset_financial_values_1 %>', '<%- ledger_info[index].finance_liabilities_financial_owedvalues_1 %>', '<%- ledger_info[index].finance_asset_financial_values_2 %>', '<%-ledger_info[index].finance_liabilities_financial_owedvalues_2 %>', '<%- ledger_info[index].finance_asset_financial_values_3 %>', '<%- ledger_info[index].finance_liabilities_financial_owedvalues_3 %>'];
+            var xValues_totals = ["Real_Estate", "Real Estate Taxes", "Stocks", "Stocks Trade Fines", "Checking/Savings", "Checking/Savings Account Fees"];
+            var barColors = ["red", "blue", "green", "blue", "orange", "yellow"];
     
             new Chart("<%= 'myChart2' + index %>", {
                 type: "bar",
@@ -124,10 +122,7 @@ box-shadow: 1px 2px 3px rgba(0,0,0,.5);
                 }
               });
         </script>
-
-
     <% } %>
-   <% } %>
 </main>
 </div>
 <form action="/crypto_finance/ledger_index" method="get" align="center" name="go_to_crypto_finance_ledger_index_form">
