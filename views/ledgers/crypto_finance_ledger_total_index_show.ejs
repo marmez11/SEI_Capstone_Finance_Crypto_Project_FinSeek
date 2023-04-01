@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+style="text-align: center;
+background-image: url('https://imgs.search.brave.com/Jhip99Bh6aIQWyy3RfLhXwsrYpV5TpIwdgt_gTa2G90/rs:fit:1200:952:1/g:ce/aHR0cHM6Ly9pLm1v/cmlvaC5jb20vMjAw/NzAyL2IzMTU0ZDMy/LmpwZw');
+width: 100%;
+height: 100%;
+margin: 0px;
+padding: 0px;
+overflow-x: scroll;
+overflow-y: scroll; ">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,68 +16,22 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
 </head>
-<style>
-    #FinSeek_Crypto_Finance_total_show_title_p {
-        font-size: 30px;
-        border-radius: 30px;
-    text-align: center;
-    color:goldenrod;
-    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
--webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-    }
-    
-        html {
-            text-align: center;
-            background-image: url("https://imgs.search.brave.com/Jhip99Bh6aIQWyy3RfLhXwsrYpV5TpIwdgt_gTa2G90/rs:fit:1200:952:1/g:ce/aHR0cHM6Ly9pLm1v/cmlvaC5jb20vMjAw/NzAyL2IzMTU0ZDMy/LmpwZw");
-            width: 100%;
-        height: 100%;
-        margin: 0px;
-        padding: 0px;
-        overflow-x: scroll;
-        overflow-y: scroll; 
-        }
-    
-        p {
-            font-size: 25px;
-            text-size-adjust: 15px;
-            color: #fff;
-        }
-
-        h1 {
-            font-size: 25px;
-            text-size-adjust: 15px;
-            color: #fff;
-        }
-
-        h2 {
-            font-size: 25px;
-            text-size-adjust: 15px;
-            color: #fff;
-        }
-    
-        .crypto_finance_ledger_totals_index {
-            writing-mode: horizontal;
-      border: 5px solid yellow;
-      border-inline-style:dashed;}
-
-
-    </style>
-</style>
 <div id="crypto_finance_total_show">
 <main id="crypto_finance_total_show_main">
-    <h2><p id="FinSeek_Crypto_Finance_total_show_title_p"><b><em><u>FinSeek Crypto/Finance Tracking/Reporting System Totals & Insights Information </u></em></b></p></h2> 
-    <br />
-    <br />
+    <h2 class="title is-1 has-text-centered is-size-2 has-background-warning"
+    style="border-radius: 30px;
+    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+-webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+box-shadow: 1px 2px 3px rgba(0,0,0,.5);"><p id="FinSeek_Crypto_Finance_total_show_title_p"><b><em><u>FinSeek Crypto/Finance Tracking/Reporting System Totals & Insights Information </u></em></b></p></h2> 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js">
         </script>
       <%  for(let index=0; index < ledger_info.length; index++) { %>
         <div class="list is-hoverable" id="crypto_finance_ledger_totals_index">
-            <p class="list-item" id="FinSeek_Crypto_Finance_ledger_totals_id"><em><b>Financial User(s) Ledger Info ID: <%=ledger_info[index].finance_user_id %> </b></em></p>
-            <p class="list-item" id="FinSeek_Crypto_Finance_ledger_totals1"><b><u>(<%= ledger_info[index].finance_asset_names_1 %> - <%= ledger_info[index].finance_liabilities_names_1 %>)</u></b> = <em> $<%= (ledger_info[index].finance_asset_financial_values_1 - ledger_info[index].finance_liabilities_financial_owedvalues_1) %>.00</em></p>
-            <p class="list-item" id="FinSeek_Crypto_Finance_ledger_totals2"><b><u>(<%= ledger_info[index].finance_asset_names_2 %> - <%= ledger_info[index].finance_liabilities_names_2 %>)</u></b> = <em> $<%= (ledger_info[index].finance_asset_financial_values_2 - ledger_info[index].finance_liabilities_financial_owedvalues_2) %>.00</em></p>
-            <p class="list-item" id="FinSeek_Crypto_Finance_ledger_totals3"><b><u>(<%= ledger_info[index].finance_asset_names_3 %> - <%= ledger_info[index].finance_liabilities_names_3 %>)</u></b> = <em> $<%= (ledger_info[index].finance_asset_financial_values_3 - ledger_info[index].finance_liabilities_financial_owedvalues_3) %>.00</em></p>
-            <h2 class="list-item" id="FinSeek_Crypto_Finance_overall_totals"> <u>Overall Totals:  </u><p>$<%=((ledger_info[index].finance_asset_financial_values_1 - ledger_info[index].finance_liabilities_financial_owedvalues_1)+(ledger_info[index].finance_asset_financial_values_2 - ledger_info[index].finance_liabilities_financial_owedvalues_2)+(ledger_info[index].finance_asset_financial_values_3 - ledger_info[index].finance_liabilities_financial_owedvalues_3))%>.00</p></h2>
+            <p class="list-item is-size-2 has-text-white has-text-centered" style="text-size-adjust: 15px;" id="FinSeek_Crypto_Finance_ledger_totals_id"><em><b>Financial User(s) Ledger Info ID: <%=ledger_info[index].finance_user_id %> </b></em></p>
+            <p class="list-item is-size-2 has-text-white has-text-centered" style="text-size-adjust: 15px;" id="FinSeek_Crypto_Finance_ledger_totals1"><b><u>(<%= ledger_info[index].finance_asset_names_1 %> - <%= ledger_info[index].finance_liabilities_names_1 %>)</u></b> = <em> $<%= (ledger_info[index].finance_asset_financial_values_1 - ledger_info[index].finance_liabilities_financial_owedvalues_1) %>.00</em></p>
+            <p class="list-item is-size-2 has-text-white has-text-centered" style="text-size-adjust: 15px;" id="FinSeek_Crypto_Finance_ledger_totals2"><b><u>(<%= ledger_info[index].finance_asset_names_2 %> - <%= ledger_info[index].finance_liabilities_names_2 %>)</u></b> = <em> $<%= (ledger_info[index].finance_asset_financial_values_2 - ledger_info[index].finance_liabilities_financial_owedvalues_2) %>.00</em></p>
+            <p class="list-item is-size-2 has-text-white has-text-centered" style="text-size-adjust: 15px;" id="FinSeek_Crypto_Finance_ledger_totals3"><b><u>(<%= ledger_info[index].finance_asset_names_3 %> - <%= ledger_info[index].finance_liabilities_names_3 %>)</u></b> = <em> $<%= (ledger_info[index].finance_asset_financial_values_3 - ledger_info[index].finance_liabilities_financial_owedvalues_3) %>.00</em></p>
+            <h2 class="list-item is-size-2 has-text-white has-text-centered" style="text-size-adjust: 15px;" id="FinSeek_Crypto_Finance_overall_totals"> <u>Overall Totals:  </u><p>$<%=((ledger_info[index].finance_asset_financial_values_1 - ledger_info[index].finance_liabilities_financial_owedvalues_1)+(ledger_info[index].finance_asset_financial_values_2 - ledger_info[index].finance_liabilities_financial_owedvalues_2)+(ledger_info[index].finance_asset_financial_values_3 - ledger_info[index].finance_liabilities_financial_owedvalues_3))%>.00</p></h2>
         </div>
     
         <canvas id="<%= 'myChart' + index %>"></canvas>
@@ -117,7 +79,7 @@ box-shadow: 1px 2px 3px rgba(0,0,0,.5);
                   legend: {display: false},
                   title: {
                     display: true,
-                    text: "FinSeek Totals"
+                    text: "User Ledger Amounts"
                   }
                 }
               });
@@ -127,7 +89,7 @@ box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 </div>
 <form action="/crypto_finance/ledger_index" method="get" align="center" name="go_to_crypto_finance_ledger_index_form">
     <label>
-        <button class="button is-warning" id="return_to_crypto_finance_ledger_info_index" align="center"><a href="/crypto_finance/ledger_index">Return to Finseek Crypto/Finance Ledger System Home Screen</a></button>
+        <button class="button is-warning is-uppercase is-underlined" id="return_to_crypto_finance_ledger_info_index" align="center"><a href="/crypto_finance/ledger_index">Return to Finseek Crypto/Finance Ledger System Home Screen</a></button>
     </label>
 </form>
 </html>

@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+style="text-align: center;
+background-image: url('https://imgs.search.brave.com/Jhip99Bh6aIQWyy3RfLhXwsrYpV5TpIwdgt_gTa2G90/rs:fit:1200:952:1/g:ce/aHR0cHM6Ly9pLm1v/cmlvaC5jb20vMjAw/NzAyL2IzMTU0ZDMy/LmpwZw');
+width: 100%;
+height: 100%;
+margin: 0px;
+padding: 0px;
+overflow-x: scroll;
+overflow-y: scroll; ">
  <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,117 +16,159 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
  </head>
- <style>
-
-  legend {
-    font-size: 30px;
-        border-radius: 30px;
-    text-align: center;
-    color:white;
-    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
--webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-  }
-
-    label {
-        font-size: 30px;
-        border-radius: 30px;
-    text-align: center;
-    color:white;
-    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
--webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-    }
-    
-    html {
-            text-align: center;
-            background-image: url("https://imgs.search.brave.com/Jhip99Bh6aIQWyy3RfLhXwsrYpV5TpIwdgt_gTa2G90/rs:fit:1200:952:1/g:ce/aHR0cHM6Ly9pLm1v/cmlvaC5jb20vMjAw/NzAyL2IzMTU0ZDMy/LmpwZw");
-            width: 100%;
-        height: 100%;
-        margin: 0px;
-        padding: 0px;
-        overflow-x: scroll;
-        overflow-y: scroll; 
-        }
-</style>
  <body>
     <main>
-        <div clas="crypto_edit">
+      <legend class="title is-1 has-text-centered is-size-2 has-background-warning" style="
+      border-radius: 30px;
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);">Edit In New Information for the Crypto Exchange</legend>
+      <br />
+        <div id="crypto_edit" style="border-radius: 40%; background-color:white">
           <form action="/crypto_finance/crypto_exchange_show/<%=id %>?_method=PUT" method="post">
             <fieldset>
-              <legend>Edit In New Information for the Crypto Exchange</legend>
               <br />
-              <label class="list-item">
-                Crypto Exchange ID:<input class="button is-warning"
+              <br />
+              <label class="list-item title is-1 has-text-centered is-size-4"
+              style="border-radius: 30px;
+          color:black;
+          -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+      -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+      box-shadow: 1px 2px 3px rgba(0,0,0,.5);"> 
+                Crypto Exchange ID:&#20;&#20;<input class="button is-warning"
                   type="number"
                   name="crypto_exchange_id"
                   placeholder="Enter Crypto Exchange ID..."
                 />
               </label>
               <br />
-              <label class="list-item">
-                Crypto Exchange Organization Name:<input class="button is-warning"
+              <br />
+              <label class="list-item title is-1 has-text-centered is-size-4"
+              style="border-radius: 30px;
+          color:black;
+          -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+      -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+      box-shadow: 1px 2px 3px rgba(0,0,0,.5);">
+                Crypto Exchange Organization Name:&#20;&#20;<input class="button is-warning"
                   type="text"
                   name="crypto_currency_exchange_org_name"
                   placeholder="Enter Crypto Exchange Organization Name..."
                 />
               </label>
               <br />
-              <label class="list-item">
-                Crypto Exchange Organization Url Link:<input class="button is-warning"
+              <br />
+              <label class="list-item title is-1 has-text-centered is-size-4"
+              style="border-radius: 30px;
+          color:black;
+          -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+      -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+      box-shadow: 1px 2px 3px rgba(0,0,0,.5);">
+                Crypto Exchange Organization Url Link:&#20;&#20;<input class="button is-warning"
                   type="text"
                   name="crypto_currency_exchange_org_url_link"
                   placeholder="Enter Crypto Exchange Organization Url Link..."
                 />
               </label>
               <br />
-              <label class="list-item">
-                Crypto Currency Name:<input class="button is-warning" type="text" name="crypto_currency_name"
+              <br />
+              <label class="list-item title is-1 has-text-centered is-size-4"
+              style="border-radius: 30px;
+          color:black;
+          -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+      -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+      box-shadow: 1px 2px 3px rgba(0,0,0,.5);">
+                Crypto Currency Name:&#20;&#20;<input class="button is-warning" type="text" name="crypto_currency_name"
                  placeholder="Enter Crypto Currency Name..." />
               </label>
               <br />
-              <label class="list-item">
-                Crypto Currency Price:<input class="button is-warning" type="number" name="crypto_currency_price" 
+              <br />
+              <label class="list-item title is-1 has-text-centered is-size-4"
+              style="border-radius: 30px;
+          color:black;
+          -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+      -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+      box-shadow: 1px 2px 3px rgba(0,0,0,.5);">
+                Crypto Currency Price:&#20;&#20;<input class="button is-warning" type="number" name="crypto_currency_price" 
                 placeholder="Enter Crypto Currency Price..." />
               </label>
               <br />
-              <label class="list-item">
-                Crypto Currency Transaction Date:<input class="button is-warning" type="text" 
+              <br />
+              <label class="list-item title is-1 has-text-centered is-size-4"
+              style="border-radius: 30px;
+          color:black;
+          -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+      -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+      box-shadow: 1px 2px 3px rgba(0,0,0,.5);">
+                Crypto Currency Transaction Date:&#20;&#20;<input class="button is-warning" type="text" 
                 name="crypto_currency_transactiondate" 
                 placeholder="Enter Crypto Currency Transaction Date..." />
               </label>
               <br />
-              <label class="list-item">
-                Crypto Currency Order Status:<input class="button is-warning" type="text" 
+              <br />
+              <label class="list-item title is-1 has-text-centered is-size-4"
+              style="border-radius: 30px;
+          color:black;
+          -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+      -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+      box-shadow: 1px 2px 3px rgba(0,0,0,.5);">
+                Crypto Currency Order Status:&#20;&#20;<input class="button is-warning" type="text" 
                 name="crypto_currency_order_status" placeholder="Enter Crypto Currency Order Status..." />
               </label>
               <br />
-              <label class="list-item">
-                Blockchain Receiving Transaction Hash ID Num:<input class="button is-warning" type="text" name="blockchain_receiving_transaction_hash_id_num" 
+              <br />
+              <label class="list-item title is-1 has-text-centered is-size-4"
+              style="border-radius: 30px;
+          color:black;
+          -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+      -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+      box-shadow: 1px 2px 3px rgba(0,0,0,.5);">
+                Blockchain Receiving Transaction Hash ID Num:&#20;&#20;<input class="button is-warning" type="text" name="blockchain_receiving_transaction_hash_id_num" 
                 placeholder="Enter Blockchain Sending Transaction Hash ID Num..." />
               </label>
               <br />
-              <label class="list-item">
-                Blockchain Sending Transaction Hash ID Num:<input class="button is-warning" type="text" name="blockchain_sending_transaction_hash_id_num" 
+              <br />
+              <label class="list-item title is-1 has-text-centered is-size-4"
+              style="border-radius: 30px;
+          color:black;
+          -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+      -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+      box-shadow: 1px 2px 3px rgba(0,0,0,.5);">
+                Blockchain Sending Transaction Hash ID Num:&#20;&#20;<input class="button is-warning" type="text" name="blockchain_sending_transaction_hash_id_num" 
                 placeholder="Enter Blockchain Sending Transaction Hash ID Number..." />
               </label>
               <br />
-              <label class="list-item">
-                Crypto Currency Circulating Supply:<input class="button is-warning" type="number" 
+              <br />
+              <label class="list-item title is-1 has-text-centered is-size-4"
+              style="border-radius: 30px;
+          color:black;
+          -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+      -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+      box-shadow: 1px 2px 3px rgba(0,0,0,.5);">
+                Crypto Currency Circulating Supply:&#20;&#20;<input class="button is-warning" type="number" 
                 name="crypto_currency_circulating_supply"
                  placeholder="Enter Crypto Currency Circulating Supply..." />
               </label>
               <br />
-              <label class="list-item">
-                Crypto Currency Quantity:<input class="button is-warning" type="number" 
+              <br />
+              <label class="list-item title is-1 has-text-centered is-size-4"
+              style="border-radius: 30px;
+          color:black;
+          -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+      -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+      box-shadow: 1px 2px 3px rgba(0,0,0,.5);">
+                Crypto Currency Quantity:&#20;&#20;<input class="button is-warning" type="number" 
                 name="crypto_currency_quantity"
                  placeholder="Enter Crypto Currency Quantity..." />
               </label>
               <br />
+              <br />
             </fieldset>
-            <input class="button is-warning is-primary" type="submit" value="Submit" />
-            <button class="button is-warning" id="return_to_crypto_exchange_index"><a href="/crypto_finance/crypto_exchange_show/<%=id %>">Return to the Crypto Exchange Home Screen</a></button>
-          </form>
         </div>
+        <br />
+        <br />
+        <input class="button is-primary is-warning is-uppercase is-underlined" type="submit" value="Submit" />
+        <button class="button is-warning is-uppercase is-underlined" id="return_to_crypto_exchange_index"><a href="/crypto_finance/crypto_exchange_show/<%=id %>">Return to the Crypto Exchange Home Screen</a></button>
+        </form>
+        
       </main>
     </body>

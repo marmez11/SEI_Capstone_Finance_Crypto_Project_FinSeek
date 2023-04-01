@@ -24,6 +24,7 @@
     "method-override": "^3.0.0",
     "mongoose": "^7.0.1",
     "morgan": "^1.10.0",
+    "node": "^19.8.1",
     "path": "^0.12.7",
     "pbkdf2-password": "^1.2.1",
     "postcss": "^8.4.21",
